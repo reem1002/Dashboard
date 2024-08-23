@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+    <link rel="icon" href="./img/dashboard-icon-16.png">
+</head>
+
+<body>
+
+    <div class=" container">
+        <aside class="sidebar">
+            <div class="logo">
+
+                <h1>Dashboard</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-home"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <a href="#">Analytics</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <a href="#">Users</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">Messages</a>
+                        <span class="badge">12</span>
+                    </li>
+                    <li>
+                        <i class=" fas fa-cog"></i>
+                        <a href="#">Settings</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <button class="logout"><i class="fas fa-sign-out-alt"></i>Logout</button>
+
+        </aside>
+
+        <main class="main">
+            <div class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="main__header">
+                <div class="main__title">
+                    <h1>Welcome Back, Reem!</h1>
+                    <div class="main__greeting">
+                        <p>Here's what's happening with your store today.</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <span class="profile-pic"><i class="fas fa-user"></i></span>
+                    <div class="profile-info">
+                        <h4>Reem Mohamed</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main__cards">
+                <div class="card">
+                    <i class="fas fa-user-friends"></i>
+                    <div class="card_inner">
+                        <p class="text-primary-p">Number of Visitors</p>
+                        <span class="font-bold text-title">1,500</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="card_inner">
+                        <p class="text-primary-p">Sales</p>
+                        <span class="font-bold text-title">$8,000</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="card_inner">
+                        <p class="text-primary-p">Orders</p>
+                        <span class="font-bold text-title">320</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-envelope"></i>
+                    <div class="card_inner">
+                        <p class="text-primary-p">Messages</p>
+                        <span class="font-bold text-title">12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="charts__left">
+                    <div class="charts__left__title">
+                        <div>
+                            <h2>Daily Sales</h2>
+                            <p>Your Store - Cairo, Egypt</p>
+                        </div>
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div class="charts__right">
+                    <div class="charts__right__title">
+                        <div>
+                            <h2>Stats Reports</h2>
+                            <p>Analytics</p>
+                        </div>
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+
+                    <div class="charts__right__cards">
+                        <div class="card1">
+                            <h1>Income</h1>
+                            <div class="percentage-chart">
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="inside-circle">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>$75,300</p>
+                        </div>
+                        <div class="card2">
+                            <h1>Sales</h1>
+                            <div class="percentage-chart">
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="inside-circle">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>$124,200</p>
+                        </div>
+                        <div class="card3">
+                            <h1>Users</h1>
+                            <div class="percentage-chart">
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="inside-circle">60%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>390</p>
+                        </div>
+                        <div class="card4">
+                            <h1>Orders</h1>
+                            <div class="percentage-chart">
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="inside-circle">50%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>188</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-orders">
+                <div class="recent-orders__title">
+                    <div>
+                        <h2>Recent Orders</h2>
+                        <p>Your recent orders</p>
+                    </div>
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="recent-orders__content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#OD1711</td>
+                                <td>John Doe</td>
+                                <td>17 Nov 2021</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                                <td>$900</td>
+                            </tr>
+                            <tr>
+                                <td>#OD1712</td>
+                                <td>John Doe</td>
+                                <td>17 Nov 2021</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>$900</td>
+                            </tr>
+                            <tr>
+                                <td>#OD1713</td>
+                                <td>John Doe</td>
+                                <td>17 Nov 2021</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                                <td>$900</td>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <footer class="footer">
+                <div class="footer__left">
+                    <p>&copy; 2024 Reem</p>
+                </div>
+                <div class="footer__right">
+                    <p>Designed by Reem Mohamed</p>
+
+                </div>
+            </footer>
+
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
